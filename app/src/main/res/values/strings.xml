@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">car-rental-app</string>
+    <string-array name="spinner">
+        <item>HI-ACE</item>
+        <item>HI-ACE DELUXE</item>
+        <item>L300</item>
+    </string-array>
+</resources>
