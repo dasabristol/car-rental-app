@@ -190,24 +190,15 @@
 
             <ImageButton
                 android:id="@+id/profilebut"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/profile"
-                android:padding="20dp"
+                android:layout_width="82dp"
+                android:layout_height="42dp"
                 android:layout_gravity="end"
                 android:layout_margin="5dp"
+                android:background="@drawable/profile"
                 android:elevation="10dp"
                 android:gravity="end"
-                android:importantForAccessibility="no" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:layout_gravity="start"
-                android:background="@drawable/calendar"
-                android:elevation="10dp"
-                android:importantForAccessibility="no"/>
+                android:importantForAccessibility="no"
+                android:padding="20dp" />
 
 
 

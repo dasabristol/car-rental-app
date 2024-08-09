@@ -5,4 +5,5 @@
         <item>HI-ACE DELUXE</item>
         <item>L300</item>
     </string-array>
+    <string name="terms_and_condition">By clicking here, I state that I have read and understood the<u>  terms and conditions</u>.</string>
 </resources>
