@@ -6,4 +6,92 @@
         <item>L300</item>
     </string-array>
     <string name="terms_and_condition">By clicking here, I state that I have read and understood the<u>  terms and conditions</u>.</string>
+    <string name="hiace_details"><li>COMFORT:</li>
+        \n \nHiace Super Grandia: Seats 10 or 14 people, Move with the convenience of being at home with easy-to-reach sockets.  The passenger cabin is one of comfort with elegant with elegant moquette seats and headrest. with headrest.  Having enough room with storage spaces, the Hiace is one that you can call your mobile home.
+        \n \n<li>CAR SAFETY FEATURE:</li>
+        \n\nKeep safety always in check with advanced safety features in an all-in-one vehicle. The Hiace is equipped with airbags, child safety lock, anti-lock braking system, seat belts, warning and parking sensors and so much more. The Commuter Cargo variant aside from the airbags has an anti-lock brake system (ABS) and a security alarm."
+    \n <b>[ -- 𝙎𝙚𝙧𝙫𝙞𝙘𝙚𝙨 𝙤𝙛𝙛𝙚𝙧𝙚𝙙: -- ]</b>
+    \n 📌 To any point in Luzon
+    \n <li>Pick-up/Drop</li>
+    \n <li>Back-and-forth</li>
+    \n <li>Family Outing</li>
+    \n <li>Airport, Pier, and etc..</li></string>
+    <string name="hiace_deluxe_details">
+        <li><b>Exterior</b> – NAVIGATE BROADER HORIZONS</li>
+        \n\nDesigned for performance with its wide exterior and sleek finish
+
+        \n\n<li><b>Interior</b> - EXPAND YOUR SENSE OF COMFORT IN TRAVEL</li>
+        \n\nSpread out with Extensive Leg Room and Comfortable Seats.
+
+        \n\n<li><b>Performance</b> - SMOOTH DRIVE AND ELEGANCE ALIGNED</li>
+        \n\nTake control and drive effortlessly with a powerful yet subtle engine.
+
+        \n\n<li><b>Comfort</b> - STEP INTO COMFORT</li>
+        \n\nStep into a world of comfort with illuminated entry lights, the moment you enter the vehicle
+
+        \n\n<li><b>Safety</b> - SAFETY UNPARALLELED</li>
+    \n\nTravel with ease with Toyota’s safety technology, all equipped in the Hiace Commuter Deluxe.
+        \n \n <b>[ -- 𝙎𝙚𝙧𝙫𝙞𝙘𝙚𝙨 𝙤𝙛𝙛𝙚𝙧𝙚𝙙: -- ]</b>
+    \n 📌 To any point in Luzon
+    \n <li>Pick-up/Drop</li>
+    \n <li>Back-and-forth</li>
+    \n <li>Family Outing</li>
+    \n <li>Airport, Pier, and etc..</li>
+    </string>
+
+    <string name="l300_features">
+        <b>Comfort Features:</b>
+        \n\n<b><li>Spacious Cabin:</li></b> The L300 has a large cabin area, providing ample space for both passengers and cargo, making long trips more comfortable.
+        \n\n<b><li>Air Conditioning:</li></b> Some models come equipped with air conditioning for a more comfortable ride, especially in warm climates.
+        \n\n<b><li>Ergonomic Seating:</li></b> The seats are designed for comfort with adjustable positions in the driver and front passenger seats.
+        \n\n<b><li>Sound Insulation:</li></b> Improved sound insulation to reduce road noise inside the cabin for a quieter journey.
+        \n\n<b><li>Power Windows and Locks:</li></b> Adds convenience for both the driver and passengers.
+        \n\n<b><li>Ample Headroom and Legroom:</li></b> The van offers generous headroom and legroom for passengers, enhancing comfort on long rides.
+
+        \n\n<b>Car Safety Features:</b>
+        \n\n<b><li>Anti-Lock Braking System (ABS):</li></b>  Prevents wheel lockup during emergency braking, maintaining vehicle control.
+        \n\n<b><li>Seatbelts:</li></b>  All seats are equipped with three-point seatbelts to ensure passenger safety.
+        \n\n<b><li>Driver and Passenger Airbags:</li></b>  Provides added protection to the driver and front passenger in the event of a collision.
+        \n\n<b><li>Reinforced Body Structure:</li></b>  Designed with a rigid frame for better crash protection.
+        \n\n<b><li>Fog Lamps</li></b> : Some models feature front fog lamps for improved visibility in adverse weather conditions.
+        \n\n<b><li>Reverse Parking Sensors:</li></b>  Assists the driver in parking, especially in tight spaces.
+
+        \n\n<b>Seating Capacity:</b>
+        \n\nThe Mitsubishi L300 can typically seat up to 12-15 passengers, depending on the seating configuration. This includes the driver and front passenger, with bench seating at the rear for additional passengers.
+
+        \n \n <b>[ -- 𝙎𝙚𝙧𝙫𝙞𝙘𝙚𝙨 𝙤𝙛𝙛𝙚𝙧𝙚𝙙: -- ]</b>
+        \n 📌 To any point in Luzon
+        \n <li>Pick-up/Drop</li>
+        \n <li>Back-and-forth</li>
+        \n <li>Family Outing</li>
+        \n <li>Airport, Pier, and etc..</li>
+    </string>
+
+    <string name="hiacedeluxedes">
+        <b>Comfort Features:</b>
+        \n\n<b><li>Spacious Cabin:</li></b> The Hiace Deluxe Commuter offers a roomy interior, providing ample space for passengers, making long journeys more comfortable.
+        \n\n<b><li>Air Conditioning:</li></b> Equipped with air conditioning vents for both front and rear passengers, ensuring a pleasant ride even in hot weather.
+        \n\n<b><li>Comfortable Seating:</li></b> Designed with ergonomic, fabric-covered seats that provide comfort during long trips.
+        \n\n<b><li>Large Windows:</li></b> Provides a great view and allows more natural light to enter the cabin.
+        \n\n<b><li>Multiple Storage Compartments:</li></b> Conveniently placed storage areas for easy access to personal items.
+
+        <b>Car Safety Features:</b>
+        \n\n<b><li>Anti-Lock Braking System (ABS):</li></b> Prevents wheel lockup during sudden braking, improving vehicle stability.
+        \n\n<b><li>Electronic Brakeforce Distribution (EBD):</li></b> Automatically adjusts brake force between front and rear wheels for safer stopping.
+        \n\n<b><li>Seatbelts:</li></b> Equipped with three-point seatbelts for all passengers, ensuring safety in the event of a collision.
+        \n\n<b><li>Dual Front Airbags:</li></b> Provides additional safety for the driver and front passenger in case of an accident.
+        \n\n<b><li>Stability Control:</li></b> Enhances vehicle control during sharp turns or on slippery surfaces.
+        \n\n<b><li>Rear Parking Sensors:</li></b> Assists in parking by alerting the driver of obstacles behind the vehicle.
+
+        <b>Seating Capacity:</b>
+        \n\nThe Toyota Hiace Deluxe Commuter can typically seat up to 15 passengers, including the driver. The seating is arranged in rows with enough space for comfortable seating, making it ideal for group transportation.
+
+            \n \n <b>[ -- 𝙎𝙚𝙧𝙫𝙞𝙘𝙚𝙨 𝙤𝙛𝙛𝙚𝙧𝙚𝙙: -- ]</b>
+        \n 📌 To any point in Luzon
+        \n <li>Pick-up/Drop</li>
+        \n <li>Back-and-forth</li>
+        \n <li>Family Outing</li>
+        \n <li>Airport, Pier, and etc..</li>
+    </string>
+
 </resources>

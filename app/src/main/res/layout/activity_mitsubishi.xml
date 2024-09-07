@@ -36,7 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:src="@drawable/hiace" />
+                    android:src="@drawable/lugan" />
 
             </androidx.cardview.widget.CardView>
 
@@ -52,19 +52,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:text="COMFORT:                                        Hiace Super Grandia: Seats 10 or 14 people, Move with the convenience of being at home with easy-to-reach sockets.  The passenger cabin is one of comfort with elegant with elegant moquette seats and headrest. with headrest.  Having enough room with storage spaces, the Hiace is one that you can call your mobile home."
+                android:text="@string/l300_features"
                 android:textSize="20dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="CAR SAFETY FEATURE:
 
-
-
-            Keep safety always in check with advanced safety features in an all-in-one vehicle. The Hiace is equipped with airbags, child safety lock, anti-lock braking system, seat belts, warning and parking sensors and so much more. The Commuter Cargo variant aside from the airbags has an anti-lock brake system (ABS) and a security alarm."
-                android:textSize="20dp" />
 
             <Button
                 android:id="@+id/book6"

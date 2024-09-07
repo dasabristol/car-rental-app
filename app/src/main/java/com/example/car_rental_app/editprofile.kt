@@ -1,15 +1,16 @@
 package com.example.car_rental_app
 
+import android.app.DatePickerDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.util.*
 
 class editprofile : AppCompatActivity() {
 
@@ -46,6 +47,27 @@ class editprofile : AppCompatActivity() {
             }
         })
 
+        // DatePickerDialog for Date of Birth
+        edtDobEdit.setOnClickListener {
+            // Get the current date to show as default
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+            // Create and show the DatePickerDialog
+            val datePickerDialog = DatePickerDialog(
+                this,
+                { _, selectedYear, selectedMonth, selectedDay ->
+                    // Set the selected date to the EditText
+                    val selectedDate = "${selectedMonth + 1}/$selectedDay/$selectedYear"
+                    edtDobEdit.setText(selectedDate)
+                },
+                year, month, day
+            )
+            datePickerDialog.show()
+        }
+
         btnSaveProfile.setOnClickListener {
             val updatedUsername = edtUsernameEdit.text.toString()
             val updatedDob = edtDobEdit.text.toString()
@@ -64,18 +86,12 @@ class editprofile : AppCompatActivity() {
 
             userRef.updateChildren(userUpdates).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    // Optionally, show a success message
-                    // For example, using a Toast:
-                    // Toast.makeText(this, "Profile updated successfully", Toast.LENGTH_SHORT).show()
-
-                    // Navigate to profile view
+                    // Optionally, show a success message or navigate to another activity
                     val intent = Intent(this, profileview::class.java)
                     startActivity(intent)
                     finish() // Optionally finish the current activity
                 } else {
-                    // Handle possible errors
-                    // For example, using a Toast:
-                    // Toast.makeText(this, "Failed to update profile", Toast.LENGTH_SHORT).show()
+                    // Handle possible errors (e.g., using a Toast)
                 }
             }
         }

@@ -1,5 +1,6 @@
 package com.example.car_rental_app
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.Html
@@ -8,14 +9,12 @@ import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import java.util.*
 
 class signup : AppCompatActivity() {
 
@@ -36,16 +35,14 @@ class signup : AppCompatActivity() {
         val termscheckbox = findViewById<CheckBox>(R.id.termsCheckBox)
         val termsTextView = findViewById<TextView>(R.id.terms)
 
-
         // Set the terms and conditions text with clickable span
         val termsText = getString(R.string.terms_and_condition)
         val spannableString = SpannableString(Html.fromHtml(termsText, Html.FROM_HTML_MODE_LEGACY))
         val clickableSpan = object : ClickableSpan() {
             override fun onClick(widget: View) {
                 // Handle the terms and conditions click
-                // For example, open a web page or a dialog with terms and conditions
-                // val intent = Intent(this@signup, TermsActivity::class.java)
-                // startActivity(intent)
+                val intent = Intent(this@signup, termsandcondition::class.java)
+                startActivity(intent)
             }
         }
 
@@ -64,9 +61,25 @@ class signup : AppCompatActivity() {
             btnsignup.isEnabled = isChecked
         }
 
-        termsTextView.setOnClickListener {
-            val intent = Intent(this, termsandcondition::class.java)
-            startActivity(intent)
+        // Set up DatePickerDialog for Date of Birth field
+        edtsignupdob.setOnClickListener {
+            // Get the current date
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONTH)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+            // Show DatePickerDialog
+            val datePickerDialog = DatePickerDialog(
+                this,
+                { _, selectedYear, selectedMonth, selectedDay ->
+                    // Format the selected date and set it to the EditText
+                    val selectedDate = "${selectedMonth + 1}/$selectedDay/$selectedYear"
+                    edtsignupdob.setText(selectedDate)
+                },
+                year, month, day
+            )
+            datePickerDialog.show()
         }
 
         btnsignup.setOnClickListener {
@@ -87,14 +100,14 @@ class signup : AppCompatActivity() {
                 edtsignupaddress.error = "Invalid"
             } else if (license.isEmpty()) {
                 edtsignuplicense.error = "Invalid"
-            } else if (mobile.isEmpty()){
+            } else if (mobile.isEmpty()) {
                 edtsignupmobile.error = "Invalid"
             } else {
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnSuccessListener { user ->
                         val userId = user.user?.uid.toString()
                         Firebase.database.getReference("Users")
-                            .child(userId).apply  {
+                            .child(userId).apply {
                                 child("email").setValue(edtsignupemail.text.toString())
                                 child("dob").setValue(edtsignupdob.text.toString())
                                 child("address").setValue(edtsignupaddress.text.toString())

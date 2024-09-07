@@ -107,6 +107,7 @@
                 android:background="@drawable/rectangle"
                 android:hint="MM/DD/YYYY"
                 android:inputType="date"
+                android:focusable="false"
                 android:paddingLeft="15dp" />
 
             <TextView
