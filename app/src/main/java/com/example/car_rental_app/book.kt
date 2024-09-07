@@ -6,15 +6,14 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.firebase.Firebase
-import android.widget.ArrayAdapter;
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-
+import android.widget.ArrayAdapter
 
 class book : AppCompatActivity() {
 
@@ -23,14 +22,11 @@ class book : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_book)
 
-
-        var database = FirebaseDatabase.getInstance()
-        var auth = FirebaseAuth.getInstance()
+        val database = FirebaseDatabase.getInstance()
+        val auth = FirebaseAuth.getInstance()
 
         val reference = database.getReference("Bookings")
         val userId = auth.currentUser?.uid.toString()
-
-
 
         val btnbookhome = findViewById<Button>(R.id.bookhome)
         val btnSend = findViewById<Button>(R.id.send)
@@ -38,16 +34,11 @@ class book : AppCompatActivity() {
         val edtaddressbook = findViewById<EditText>(R.id.addressbook)
         val edtmobilebook = findViewById<EditText>(R.id.mobilebook)
         val edtlicensebook = findViewById<EditText>(R.id.licensebook)
-
         val edtdobbook = findViewById<Spinner>(R.id.dobbook)
 
         val adapter = ArrayAdapter.createFromResource(this, R.array.spinner, android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         edtdobbook.adapter = adapter
-
-
-
-
 
         btnSend.setOnClickListener {
             Log.d("FOoo", "Bar")
@@ -61,9 +52,9 @@ class book : AppCompatActivity() {
                     child("license").setValue(edtlicensebook.text.toString())
                 }
 
-
+            // Display the Toast message
+            Toast.makeText(this, "BOOKED!!!", Toast.LENGTH_SHORT).show()
         }
-
 
         btnbookhome.setOnClickListener {
             val intent = Intent(this, home::class.java)
